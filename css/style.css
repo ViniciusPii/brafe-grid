@@ -74,8 +74,24 @@ img {
 
 /* Sobre */
 
+.sobre {
+	padding: 60px 0;
+}
+
 .sobre h2 {
+	text-align: center;
 	font-size: 2.25em;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+}
+
+.sobre h2::after {
+	content: '';
+	display: block;
+	width: 100px;
+	height: 3px;
+	background: #252525;
+	margin: 10px auto;
 }
 
 .sobre-item h3 {
@@ -87,12 +103,18 @@ img {
 	font-weight: normal;
 	text-align: center;
 	position: relative;
+	width: 220px;
+	padding: 5px 0 10px 0;
+	top: -25px;
 }
 
 .sobre>p {
 	font-size: 1.125em;
 	line-height: 1.4em;
 	font-style: italic;
+	max-width: 460px;
+	margin: 20px auto;
+	text-align: center;
 }
 
 /* Produtos */
@@ -101,10 +123,18 @@ img {
 	background: #e7e4d8;
 	border-top: 3px solid #d6d3c8;
 	border-bottom: 3px solid #d6d3c8;
+	padding: 60px 0;
+	text-align: center;
+}
+
+.produtos-item {
+	margin-bottom: 40px;
 }
 
 .produtos-item h2 {
+	text-align: center;
 	font-size: 2.25em;
+	margin-bottom: 20px;
 }
 
 .produtos-item h2::before {
@@ -116,6 +146,7 @@ img {
 	border-radius: 50%;
 	border: 5px solid #e7e4d8;
 	box-shadow: 0 0 0 5px currentColor;
+	margin: 20px auto;
 }
 
 h2.produtos-paulista::before {
@@ -143,6 +174,10 @@ h2.produtos-mineiro::before {
 	font-size: 1.125em;
 	font-weight: bold;
 	text-transform: uppercase;
+	width: 180px;
+	display: block;
+	padding: 15px 0;
+	margin: 0 auto;
 }
 
 /* Locais */
@@ -238,4 +273,3 @@ h2.produtos-mineiro::before {
 		padding: 60px 0;
 	}
 }
-
